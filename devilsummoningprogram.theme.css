@@ -1,0 +1,179 @@
+/**
+ * @name Demon Summoning Program
+ * @author TENMA Housei Ishiba
+ * @description A strange program sent to you by a mysterious man in a red suit.
+ * @version 0.01 
+ */
+
+/* Import fonts */
+
+
+@font-face {
+    font-family:'Megaten 20XX';
+    src:url("https://raw.githubusercontent.com/ganon4688/COMP-Theme/main/Megaten%2020XX.ttf");
+    font-weight:500;
+}
+
+@font-face {
+    font-family:'Nintendo DS BIOS';
+    src:url("https://raw.githubusercontent.com/ganon4688/COMP-Theme/main/Nintendo-DS-BIOS.ttf");
+    font-weight:500;
+
+}
+
+@font-face {
+    font-family:'Yu Mincho Regular';
+    src:url("https://raw.githubusercontent.com/ganon4688/COMP-Theme/main/yumin.ttf");
+    font-weight:500;
+}
+
+:root {
+  --theme: var(--smt-primary);
+
+  /* New Main Color */
+  --smt-primary: #cc0001;
+  --hp-green: #00ddb2;
+  --mp-pink: #ff66ed;
+  --p5-blue: #ffffff;
+  --smt-red: #ff051e;
+}
+
+
+/* Text message font */
+.message-2CShn3 .markup-eYLPri {
+  font-family: "MEGATEN 20XX", sans-serif;
+  font-size: 0.85em;
+}
+
+/* DM Date Divider */
+.divider-IqmEqJ .content-3spvdd {
+  font-family: 'Nintendo DS BIOS';
+  font-size: 1.25em;
+  color: #000;
+  background: #fff;
+  letter-spacing: 3px;
+  border-radius: 2px;
+  border: 2px solid #000;
+  padding: 5px;
+  transform: 
+}
+
+/* Channel font */
+.containerDefault-YUSmu3 {
+  font-family: 'Nintendo DS BIOS', sans-serif;
+  font-size: 1.25em;
+}
+
+/* Changes Title Text */
+.titleBar-1it3bQ::before {
+    content:var(--glizzy, "Devil Summoning Program");
+    color:var(#ff051e);
+    background:var(#ff051e);
+    position:absolute;
+    top:-4px;
+    left:0;
+    height:18px;
+    padding:4px;
+    line-height:23px;
+    font-size:14px;
+    letter-spacing:0;
+    z-index:1
+}
+
+/* Disables ugly ahh baked in Discord title */
+.wordmark-2u86JB{display:none}
+
+/* Icon */
+.guilds-2JjMmN
+  .tutorialContainer-1pL9QS
+  .wrapper-3kah-n
+  .childWrapper-1j_1ub
+  svg {
+  display: none;
+}
+
+
+.guilds-2JjMmN .tutorialContainer-1pL9QS .wrapper-3kah-n .childWrapper-1j_1ub {
+  background: #000 url(https://raw.githubusercontent.com/ganon4688/COMP-Theme/main/loki%20white.png) no-repeat center /
+  100%;
+}
+    
+	
+/* Chat Message Avatars */
+.message-2CShn3 .avatar-2e8lTP .wrapper-3Un6-K {
+  border-radius: 0;
+  background-color: #000;
+
+  border: 2px solid #fff;
+  /*transform: rotate(-4deg) skew(3deg); */
+  overflow: visible;
+}
+
+
+.message-2CShn3:nth-child(even) .avatar-2e8lTP {
+  transform: rotate(-2deg) skew(3deg);
+}
+
+/* Code font and colors, also chat box text color */
+.markup-eYLPri span {
+  color: #ffffff;
+  font-family: "MEGATEN 20XX", sans-serif;
+  font-size: 0.95em;
+}
+
+.placeholder-1_mJY1 {
+  font-family: "Nintendo DS BIOS", sans-serif;
+  color: #ffffff;
+  font-size: 0.3em;
+}
+
+/* User Text Box Color */
+  --channeltextarea-background: #fff;
+  
+  /* Message Date/Time */
+  --text-link: var(--theme);
+  --text-muted: #fff;
+  /* --text-muted: #cc0001; */
+  
+ 
+ /* Backgrounds */
+  --background-primary: #101010; /* Background color between text */
+  --background-secondary: var(--primary-alt); 
+  --background-secondary-alt: var(--primary-alt);
+  --background-accent: var(--theme); 
+  --background-tertiary: var(--theme); /* Outermost border */
+  
+  
+  /* Scrollbar */
+  --scrollbar-thin-thumb: var(#ffffff);
+  --scrollbar-auto-thumb: var(#ffffff);
+  --scrollbar-auto-track: #222;
+  
+  /* Username Font, in Text Messages */ 
+.username-h_Y3Us {
+  font-family: "Yu Mincho Regular", sans-serif; 
+  font-style: italic;
+  font-smooth: never;
+}
+
+.username-3_PJ5r{
+	font-family: "Yu Mincho Regular", sans-serif; 
+  font-style: italic;
+  font-smooth: never;
+}
+
+.overflow-1wOqNV {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: relative;
+	font-family: "Nintendo DS Bios", sans-serif; 
+	font-style:bold;
+  font-smooth: never;
+  font-size: 24px;
+}
+.container-2sjPya{
+	--background-primary #FFFFFF
+	
+}
+
