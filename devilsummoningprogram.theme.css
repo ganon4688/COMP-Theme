@@ -1,6 +1,6 @@
 /**
  * @name Demon Summoning Program
- * @author TENMA Housei Ishiba
+ * @author Ishiba Housei
  * @description A strange program sent to you by a mysterious man in a red suit.
  * @version 0.01 
  */
@@ -39,11 +39,7 @@
 }
 
 
-/* Text message font */
-.message-2CShn3 .markup-eYLPri {
-  font-family: "MEGATEN 20XX", sans-serif;
-  font-size: 0.85em;
-}
+
 
 /* DM Date Divider */
 .divider-IqmEqJ .content-3spvdd {
@@ -66,9 +62,10 @@
 
 /* Changes Title Text */
 .titleBar-1it3bQ::before {
-    content:var(--glizzy, "Devil Summoning Program");
-    color:var(#ff051e);
-    background:var(#ff051e);
+    content:var(--glizzy, "DDS-NET");
+	font-family: "Helvetica";
+    color:#ff051e;
+    background:#000000;
     position:absolute;
     top:-4px;
     left:0;
@@ -176,4 +173,112 @@
 	--background-primary #FFFFFF
 	
 }
+
+/* Mid-chat Usernames */
+.username-h_Y3Us{
+    font-size: 1rem;
+	font-family:"MEGATEN 20XX";
+    font-weight: 500;
+    line-height: 1.375rem;
+    color: var(--header-primary);
+    display: inline;
+    vertical-align: baseline;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Messages */
+
+	/* Hover-over gradient */
+.message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover {
+    background-color: var(--background-message-hover);
+}
+	/* Texxt message wrapper */
+.cozy-VmLDNB .header-2jRmjb {
+	background-color: #101012;
+    display: block;
+    position: relative;
+    line-height: 1.375rem;
+    min-height: 1.375rem;
+    color: var(--text-muted);
+    white-space: break-spaces;
+    word-wrap: pre-wrap;
+}
+
+.message-2CShn3 {
+    padding-right: 48px!important;
+	background-color: #101012;
+}
+
+	/* Text messages and their wrapper */
+.message-2CShn3 .markup-eYLPri {
+  font-family: "MEGATEN 20XX", sans-serif;
+  background-color: #101012;
+  font-size: 0.85em;
+}
+	/* Text chat */
+.scrollerContent-2SW0kQ {
+	background-color: #101012;
+    overflow-anchor: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    min-height: 100%;
+}
+
+	/* Text box container 1 */
+.content-1jQy2l:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -1px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
+    z-index: 1;
+    pointer-events: none;
+	
+}
+
+.scrollableContainer-15eg7h{
+	border: 1px solid;
+    border-image-slice: 1; /* Slice will unround it and make it square/rectangular */
+}
+
+
+
+/* Sidebar (Friendslist/DMs) */
+
+	/* Friends Icon */
+
+[href="/channels/@me"] .linkButtonIcon-7rsZcu{
+    width: 24px;
+    height: 24px;
+    background: url("https://raw.githubusercontent.com/ganon4688/COMP-Theme/main/press%20turn%20icon.png");
+    fill:transparent;
+    background-size:cover;
+}
+[href="/channels/@me"] .linkButtonIcon-7rsZcu path{
+    display: none
+}
+
+	/* Nitro Icon */
+	
+	
+	
+	/* Family Center Icon */
+	
+
+
+
 
