@@ -96,27 +96,7 @@
 }
     
 	
-/* Chat Message Avatars */
-.message-2CShn3 .avatar-2e8lTP .wrapper-3Un6-K {
-  border-radius: 0;
-  background-color: #000;
 
-  border: 2px solid #fff;
-  /*transform: rotate(-4deg) skew(3deg); */
-  overflow: visible;
-}
-
-
-.message-2CShn3:nth-child(even) .avatar-2e8lTP {
-  transform: rotate(-2deg) skew(3deg);
-}
-
-/* Code font and colors, also chat box text color */
-.markup-eYLPri span {
-  color: #ffffff;
-  font-family: "MEGATEN 20XX", sans-serif;
-  font-size: 0.95em;
-}
 
 .placeholder-1_mJY1 {
   font-family: "Nintendo DS BIOS", sans-serif;
@@ -174,7 +154,7 @@
 	
 }
 
-/* Mid-chat Usernames */
+	/* Mid-chat Usernames */
 .username-h_Y3Us{
     font-size: 1rem;
 	font-family:"MEGATEN 20XX";
@@ -190,11 +170,34 @@
 
 /* Messages */
 
+	/* Chat Message Avatars */
+.message-2CShn3 .avatar-2e8lTP .wrapper-3Un6-K {
+  border-radius: 0;
+  background-color: #000;
+
+  border: 2px solid #fff;
+  /*transform: rotate(-4deg) skew(3deg); */
+  overflow: visible;
+}
+
+
+.message-2CShn3:nth-child(even) .avatar-2e8lTP {
+  transform: rotate(-2deg) skew(3deg);
+}
+
+	/* Code font and colors, also chat box text color */
+.markup-eYLPri span {
+  color: #ffffff;
+  font-family: "MEGATEN 20XX", sans-serif;
+  font-size: 0.95em;
+  background-color:#000000;
+}
+
 	/* Hover-over gradient */
 .message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover {
     background-color: var(--background-message-hover);
 }
-	/* Texxt message wrapper */
+	/* Text message wrapper */
 .cozy-VmLDNB .header-2jRmjb {
 	background-color: #101012;
     display: block;
@@ -213,11 +216,14 @@
 
 	/* Text messages and their wrapper */
 .message-2CShn3 .markup-eYLPri {
-  font-family: "MEGATEN 20XX", sans-serif;
-  background-color: #101012;
-  font-size: 0.85em;
+	font-family: "MEGATEN 20XX", sans-serif;
+	background-color: #101012;
+	font-size: 0.85em;
+	border-style:solid;
+	border-color:e7e7e7;
 }
 	/* Text chat */
+
 .scrollerContent-2SW0kQ {
 	background-color: #101012;
     overflow-anchor: none;
@@ -233,7 +239,22 @@
     align-items: stretch;
     min-height: 100%;
 }
+	/*Text Area, Upload Button, Gift Button, etc*/
+.slateTextArea-27tjG0 {
+    padding-right: 10px;
+    position: absolute;
+    left: 0;
+    right: 10px;
+	background-color:#000000;
+}
 
+.inner-NQg18Y {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+	background-color:#000000;
+}
 	/* Text box container 1 */
 .content-1jQy2l:before {
     content: "";
@@ -255,8 +276,31 @@
     border-image-slice: 1; /* Slice will unround it and make it square/rectangular */
 }
 
-
-
+	/* The part right underneath the text box container */
+.form-3gdLxP{
+    position: relative;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: -8px;
+	color:#e5e8e6;
+}	
+	/*Code Blocks, aka Markup*/
+.markup-eYLPri code {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    text-indent: 0;
+    white-space: pre-wrap;
+    scrollbar-width: thin;
+    scrollbar-color: var(--background-tertiary) var(--background-secondary);
+    background: var(--background-secondary);
+	background-color:#000000;
+    border: solid var(#e5e8e6);
+	border-color:#e5e8e6;
+	font-family:"MEGATEN 20XX";
+}	
+	
 /* Sidebar (Friendslist/DMs) */
 
 	/* Friends Icon */
@@ -278,7 +322,20 @@
 	
 	/* Family Center Icon */
 	
-
-
-
+	/*DMs List */
+/*	
+.layout-1LjVue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+	background-color:#384239
+}
+*/
+.theme-dark .scroller-WSmht3 {
+    background: var(--bg-overlay-3,var(--background-secondary));
+	background-color:#404040
+}
 
